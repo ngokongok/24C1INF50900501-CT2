@@ -18,25 +18,23 @@ internal class Program
     }
     static void baitap_1()
     {
-        Console.OutputEncoding = Encoding.UTF8;
-        Console.WriteLine("Nhập 1 số n:");
+        Console.WriteLine("Nhap 1 so n:");
         int n = int.Parse("0" + Console.ReadLine());
         if (n % 2 == 0)
         {
-            Console.WriteLine($"{n} là số chẵn");
+            Console.WriteLine($"{n} là so chan");
         }
         else
-            Console.WriteLine($"{n} là số lẻ");
+            Console.WriteLine($"{n} là so le");
     }
     static void baitap_2()
     {
-        Console.OutputEncoding = Encoding.UTF8;
         int a, b, c, largest;
-        Console.WriteLine("Nhập a:");
+        Console.WriteLine("Nhap a:");
         a = int.Parse("0" + Console.ReadLine());
-        Console.WriteLine("Nhập b:");
+        Console.WriteLine("Nhap b:");
         b = int.Parse("0" + Console.ReadLine());
-        Console.WriteLine("Nhập c:");
+        Console.WriteLine("Nhap c:");
         c = int.Parse("0" + Console.ReadLine());
 
         if (a > b && a > c)
@@ -51,44 +49,43 @@ internal class Program
         {
             largest = c;
         }
-        Console.WriteLine("Số lớn nhất là:" + largest);
+        Console.WriteLine("S0 lon nhat la:" + largest);
     }
     static void baitap_3()
     {
-        Console.OutputEncoding = Encoding.UTF8;
-        Console.WriteLine("Nhập tọa độ x của điểm:");
+        Console.WriteLine("Nhap toa do x:");
         double x = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Nhập tọa độ y của điểm:");
+        Console.WriteLine("Nhap toa do y:");
         double y = Convert.ToDouble(Console.ReadLine());
 
         if (x > 0 && y > 0)
         {
-            Console.WriteLine("Điểm nằm ở góc phần tư thứ I");
+            Console.WriteLine("Diem nam o goc phan tu thu I");
         }
         else if (x < 0 && y > 0)
         {
-            Console.WriteLine("Điểm nằm ở góc phần tư thứ II");
+            Console.WriteLine("Diem nam o goc phan tu thu II");
         }
         else if (x < 0 && y < 0)
         {
-            Console.WriteLine("Điểm nằm ở góc phần tư thứ III");
+            Console.WriteLine("Diem nam o goc phan tu thu III");
         }
         else if (x > 0 && y < 0)
         {
-            Console.WriteLine("Điểm nằm ở góc phần tư thứ IV");
+            Console.WriteLine("Diem nam o goc phan tu thu IV");
         }
         else if (x == 0 && y == 0)
         {
-            Console.WriteLine("Điểm nằm tại gốc tọa độ");
+            Console.WriteLine("Diem nam tai goc toa đo");
         }
         else if (x == 0)
         {
-            Console.WriteLine("Điểm nằm trên trục Oy");
+            Console.WriteLine("Diem nam tren truc Oy");
         }
         else
         {
-            Console.WriteLine("Điểm nằm trên trục Ox");
+            Console.WriteLine("Diem nam tren truc Ox");
         }
     }
     static void baitap_4()
